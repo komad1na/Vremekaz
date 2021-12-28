@@ -21,8 +21,13 @@ export const obrada = function (data) {
   drugi.innerHTML += `Minimalna dnevna: ${temperatura.temp_min} &#176;C<br>`;
   drugi.innerHTML += `Pritisak: ${temperatura.pressure} hPa<br><br>`;
   drugi.innerHTML += `Brzina vetra: ${data.wind.speed} m/s<br>`;
-  drugi.innerHTML += `<span>&#8599;</span><br>`;
+  drugi.innerHTML += `<div style="display: flex;justify-content: flex-start;padding-left: 70px;">
+  <div>Smer vetra: &nbsp;&nbsp;</div>
+  <div id="smer" style="padding-top: 2px;">&#8599;</div></div><br />`;
 
+  var rot = document.getElementById("smer");
+
+  rot.style.transform = `rotate(${data.wind.deg}deg)`;
   // podesavanje opisa ikonice
   const description = document.getElementById("opis");
   description.innerHTML = getDescription(data.weather[0].id);

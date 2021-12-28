@@ -1,7 +1,7 @@
 .kartica {
-  width: 250px;
-  min-height: 500px;
-  height: 530px;
+  width: 300px;
+  min-height: 600px;
+  height: 620px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
@@ -21,8 +21,8 @@
   margin-right: auto;
 }
 hr {
-  width: 115%;
-  margin-left: -16;
+  width: 113%;
+  margin-left: -17;
 }
 .pretraga {
   margin-left: auto;
@@ -32,4 +32,8 @@ hr {
 }
 #gradLabela {
   font-size: x-large;
+}
+
+#podaci {
+  font-size: 1.1vw;
 }
