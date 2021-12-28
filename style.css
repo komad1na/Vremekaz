@@ -1,0 +1,35 @@
+.kartica {
+  width: 250px;
+  min-height: 500px;
+  height: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  text-align: center;
+}
+.header {
+  background-color: rgb(206, 255, 255);
+  font-size: 2.1vw;
+}
+#prvi {
+  height: 10px;
+}
+.slika {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+hr {
+  width: 115%;
+  margin-left: -16;
+}
+.pretraga {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 3rem;
+}
+#gradLabela {
+  font-size: x-large;
+}
