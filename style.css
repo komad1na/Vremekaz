@@ -1,15 +1,20 @@
+@font-face {
+  font-family: "epilogue";
+  src: url(Epilogue-Light.ttf);
+}
+body {
+  font-family: "epilogue";
+}
 .kartica {
-  width: 300px;
+  width: 350px;
   min-height: 500px;
-  height: 529px;
+  height: 544px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
   text-align: center;
   border-radius: 11px;
   border: black solid 1px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.7rem;
 }
 .kartica hr {
   color: black;
@@ -22,12 +27,12 @@
 }
 .header {
   background-color: #4b5a83;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: aliceblue;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom: solid 1px black;
-  padding: 5px 0 5px 0;
+  padding: 15px 0 5px 0;
 }
 .prvi {
   background-color: #4b5a83;
