@@ -1,3 +1,4 @@
+// vraca smer vetra u odnosu na ugao duvanja iz API poziva
 export function getDirection(deg) {
   var dir = "";
   if ((deg > 348.75 && deg <= 360.0) || (deg >= 0 && deg < 11.25)) {

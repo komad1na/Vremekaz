@@ -1,3 +1,4 @@
+// Vraca opis  prognoze u zavisnosti od ID-ja
 export function getDescription(desc) {
   var description = "";
   switch (desc) {

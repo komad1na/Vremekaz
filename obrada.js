@@ -15,14 +15,14 @@ export const obrada = function (data) {
   // menjanje informacija o temperaturi
   var temperatura = data.main;
   var drugi = document.getElementById("podaci");
-  drugi.innerHTML = `Temperatura: ${temperatura.temp} &#176;C<br>`;
-  drugi.innerHTML += `Osećaj: ${temperatura.feels_like}&#176;C<br>`;
-  drugi.innerHTML += `Vlažnost: ${temperatura.humidity}%<br>`;
-  drugi.innerHTML += `Maksimalna dnevna: ${temperatura.temp_max} &#176;C<br>`;
-  drugi.innerHTML += `Minimalna dnevna: ${temperatura.temp_min} &#176;C<br>`;
-  drugi.innerHTML += `Pritisak: ${temperatura.pressure} hPa<br><br>`;
-  drugi.innerHTML += `Brzina vetra: ${data.wind.speed} m/s<br>`;
-  drugi.innerHTML += `<div style="display: flex;justify-content: flex-start;padding-left: 70px;">
+  drugi.innerHTML = `Temperatura: ${temperatura.temp} &#176;C<br>
+  Osećaj: ${temperatura.feels_like}&#176;C<br>
+  Vlažnost: ${temperatura.humidity}%<br>
+  Maksimalna dnevna: ${temperatura.temp_max} &#176;C<br>
+  Minimalna dnevna: ${temperatura.temp_min} &#176;C<br>
+  Pritisak: ${temperatura.pressure} hPa<br><br>
+  Brzina vetra: ${data.wind.speed} m/s<br>
+  <div style="display: flex;justify-content: flex-start;padding-left: 45px;">
   <div>Smer vetra: &nbsp;&nbsp;</div>
   <div id="smer" style="padding-top: 2px;">&#8593; </div>&nbsp;&nbsp;${getDirection(
     data.wind.deg
