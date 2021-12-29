@@ -1,5 +1,6 @@
 import { getDescription } from "./getDescription.js";
 import { getPicture } from "./getPicture.js";
+import { getDirection } from "./getDirection.js";
 
 export const obrada = function (data) {
   console.log(data);
@@ -23,11 +24,14 @@ export const obrada = function (data) {
   drugi.innerHTML += `Brzina vetra: ${data.wind.speed} m/s<br>`;
   drugi.innerHTML += `<div style="display: flex;justify-content: flex-start;padding-left: 70px;">
   <div>Smer vetra: &nbsp;&nbsp;</div>
-  <div id="smer" style="padding-top: 2px;">&#8599;</div></div><br />`;
+  <div id="smer" style="padding-top: 2px;">&#8593; </div>&nbsp;&nbsp;${getDirection(
+    data.wind.deg
+  )}</div><br />`;
 
+  // rotiranje strelice u smeru vetra
   var rot = document.getElementById("smer");
-
   rot.style.transform = `rotate(${data.wind.deg}deg)`;
+
   // podesavanje opisa ikonice
   const description = document.getElementById("opis");
   description.innerHTML = getDescription(data.weather[0].id);

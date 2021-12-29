@@ -9,16 +9,20 @@
 }
 .header {
   background-color: rgb(206, 255, 255);
-  font-size: 2.1vw;
+  font-size: 1.3rem;
 }
 #prvi {
   height: 10px;
+  background-color: rgb(250, 236, 211);
 }
 .slika {
   width: 150px;
   height: 150px;
   margin-left: auto;
   margin-right: auto;
+}
+#opis {
+  font-size: large;
 }
 hr {
   width: 113%;
@@ -35,5 +39,5 @@ hr {
 }
 
 #podaci {
-  font-size: 1.1vw;
+  font-size: 1.2rem;
 }
