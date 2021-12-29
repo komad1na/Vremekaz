@@ -88,6 +88,9 @@ body {
   color: var(--tekst);
   font-size: 1rem;
 }
+.pretragaBtn:hover {
+  box-shadow: var(--tekst) 2px 2px 5px;
+}
 .gradLabela {
   height: 35px;
 }
