@@ -9,7 +9,7 @@ export const obrada = function (data) {
   ikonica.src = getPicture(data.weather[0].icon);
 
   // menjanje naslova u ime grada
-  const naslov = document.getElementsByClassName("card-header");
+  const naslov = document.getElementsByClassName("header");
   naslov[0].innerHTML = `${data.name}`;
 
   // menjanje informacija o temperaturi

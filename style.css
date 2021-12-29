@@ -1,18 +1,39 @@
 .kartica {
   width: 300px;
-  min-height: 550px;
-  height: 567px;
+  min-height: 500px;
+  height: 529px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
   text-align: center;
+  border-radius: 11px;
+  border: black solid 1px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.7rem;
+}
+.kartica hr {
+  color: black;
+  width: auto;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 1px;
+  opacity: 100%;
 }
 .header {
-  background-color: rgb(206, 255, 255);
+  background-color: #4b5a83;
   font-size: 1.3rem;
+  color: aliceblue;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: solid 1px black;
+  padding: 5px 0 5px 0;
 }
 .prvi {
-  background-color: rgb(250, 236, 211);
+  background-color: #4b5a83;
+  color: aliceblue;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .slika {
   width: 150px;
@@ -37,6 +58,6 @@ hr {
   font-size: x-large;
 }
 
-#podaci {
-  font-size: 1.2rem;
+.podaci {
+  font-size: 1.1rem;
 }
