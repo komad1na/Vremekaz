@@ -1,9 +1,17 @@
 @font-face {
-  font-family: "epilogue";
+  font-family: "epilog";
   src: url(Epilogue-Light.ttf);
 }
+@font-face {
+  font-family: "inter";
+  src: url(Inter-Light.ttf);
+}
+:root {
+  --pozadina: #4b5a83;
+  --tekst: aliceblue;
+}
 body {
-  font-family: "epilogue";
+  font-family: "epilog";
 }
 .kartica {
   width: 350px;
@@ -26,17 +34,17 @@ body {
   opacity: 100%;
 }
 .header {
-  background-color: #4b5a83;
+  background-color: var(--pozadina);
   font-size: 1.5rem;
-  color: aliceblue;
+  color: var(--tekst);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom: solid 1px black;
   padding: 15px 0 5px 0;
 }
 .prvi {
-  background-color: #4b5a83;
-  color: aliceblue;
+  background-color: var(--pozadina);
+  color: var(--tekst);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -57,7 +65,10 @@ hr {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--pozadina);
+  color: var(--tekst);
 }
 #gradLabela {
   font-size: x-large;
@@ -65,4 +76,16 @@ hr {
 
 .podaci {
   font-size: 1.1rem;
+}
+.pretragaBtn {
+  border-radius: 3px;
+  border: var(--tekst) 1px solid;
+  height: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: var(--pozadina);
+  color: var(--tekst);
+}
+.gradLabela {
+  height: 35px;
 }
