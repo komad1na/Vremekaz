@@ -1,14 +1,9 @@
 @font-face {
-  font-family: "epilog";
-  src: url(Epilogue-Light.ttf);
-}
-@font-face {
   font-family: "inter";
   src: url(Inter-Light.ttf);
 }
 :root {
   --pozadina: #4b5a83;
-
   --tekst: aliceblue;
 }
 body {
