@@ -3,13 +3,13 @@ import { getPicture } from "./getPicture.js";
 import { getDirection } from "./getDirection.js";
 
 export const obrada = function (data) {
-  console.log(data);
+  //console.log(data);
   // menjanje ikonice
   var ikonica = document.getElementById("ikonica");
   ikonica.src = getPicture(data.weather[0].icon);
 
   // menjanje naslova u ime grada
-  const naslov = document.getElementsByClassName("header");
+  const naslov = document.getElementsByClassName("naslov");
   naslov[0].innerHTML = `${data.name}`;
 
   // menjanje informacija o temperaturi
@@ -29,8 +29,8 @@ export const obrada = function (data) {
   )}</div><br />`;
 
   // rotiranje strelice u smeru vetra
-  var rot = document.getElementById("smer");
-  rot.style.transform = `rotate(${data.wind.deg}deg)`;
+  var rotiraj = document.getElementById("smer");
+  rotiraj.style.transform = `rotate(${data.wind.deg}deg)`;
 
   // podesavanje opisa ikonice
   const description = document.getElementById("opis");
