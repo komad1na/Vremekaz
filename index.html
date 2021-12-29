@@ -16,12 +16,13 @@
   </div>
   <div class="card kartica">
     <div class="card-header header">N/A</div>
-    <div id="prvi" class="card-body">
-      <img id="ikonica" src="http://openweathermap.org/img/wn/04d@2x.png" class="img img-fluid slika" alt="ikonica" />
-      <hr />
-      <div id="opis">--------</div>
-      <hr />
-      <div id="podaci">
+    <div id="prvi" class="list-group list-group-flush">
+      <div class="list-group-item prvi">
+        <img id="ikonica" src="http://openweathermap.org/img/wn/10d@2x.png" class="img img-fluid slika" alt="ikonica" />
+      </div>
+      <div class="list-group-item prvi" style="width: 100%;" id="opis">--------</div>
+
+      <div class="list-group-item prvi" id="podaci">
         Temperatura: -- &#176;C<br />
         Osećaj: -- &#176;C<br />
         Vlažnost: --%<br />
@@ -29,7 +30,7 @@
         Minimalna dnevna: -- &#176;C<br />
         Pritisak: -- hPa<br /><br />
         Brzina vetra: -- m/s<br />
-        <div style="display: flex;justify-content: flex-start;padding-left: 45px;">
+        <div style="display: flex;justify-content: center;">
           <div>Smer vetra: &nbsp;&nbsp;</div>
           <div id="smer" style="padding-top: 2px;">&#8593; </div> &nbsp; -- N/A
         </div>

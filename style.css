@@ -1,7 +1,7 @@
 .kartica {
   width: 300px;
-  min-height: 600px;
-  height: 620px;
+  min-height: 550px;
+  height: 567px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
@@ -11,8 +11,7 @@
   background-color: rgb(206, 255, 255);
   font-size: 1.3rem;
 }
-#prvi {
-  height: 10px;
+.prvi {
   background-color: rgb(250, 236, 211);
 }
 .slika {
@@ -25,7 +24,7 @@
   font-size: large;
 }
 hr {
-  width: 113%;
+  width: 112%;
   margin-left: -17;
 }
 .pretraga {

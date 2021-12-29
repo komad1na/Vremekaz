@@ -22,7 +22,7 @@ export const obrada = function (data) {
   Minimalna dnevna: ${temperatura.temp_min} &#176;C<br>
   Pritisak: ${temperatura.pressure} hPa<br><br>
   Brzina vetra: ${data.wind.speed} m/s<br>
-  <div style="display: flex;justify-content: flex-start;padding-left: 45px;">
+  <div style="display: flex;justify-content: center;">
   <div>Smer vetra: &nbsp;&nbsp;</div>
   <div id="smer" style="padding-top: 2px;">&#8593; </div>&nbsp;&nbsp;${getDirection(
     data.wind.deg
