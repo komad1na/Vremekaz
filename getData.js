@@ -39,7 +39,19 @@ export async function getData() {
       )
         .then((response) => response.json())
         .then((data) => {
-          obrada(data);
+          if (data.cod == "404") {
+            console.log(document.querySelector(".greske"));
+            document.querySelector(".greske").classList.remove("sakriveno");
+            document.querySelector(
+              ".greske"
+            ).innerHTML = `Grad nije pronadjen. Pokušajte ponovo.`;
+            document
+              .querySelector(".greske")
+              .setAttribute("style", "color:red;");
+          } else {
+            document.querySelector(".greske").classList.add("sakriveno");
+            obrada(data);
+          }
         });
     }
   } catch (error) {
