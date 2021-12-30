@@ -21,6 +21,9 @@ export async function getData() {
           "style",
           "border: 1px solid red;border-radius: 5px;color:red;"
         );
+      document.querySelector(".greske").classList.remove("sakriveno");
+      document.querySelector(".greske").innerHTML = `Morate uneti grad.`;
+      document.querySelector(".greske").setAttribute("style", "color:red;");
       // Vracanje na prvobitan izgled
       setTimeout(() => {
         // Vracanje labele na stari izgled
@@ -31,6 +34,7 @@ export async function getData() {
         document.getElementById("grad").setAttribute("style", "");
         // Vracanje dugmeta Pretrazi na stari stil
         document.getElementById("pretragaBtn").setAttribute("style", "");
+        document.querySelector(".greske").classList.add("sakriveno");
       }, 3000);
     } else {
       // Dobijanje podataka sa API-ja
