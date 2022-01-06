@@ -4,6 +4,7 @@ import { getDirection } from "./getDirection.js";
 
 export const obrada = function (data) {
   //console.log(data);
+
   // menjanje ikonice
   var ikonica = document.getElementById("ikonica");
   ikonica.src = getPicture(data.weather[0].icon);

@@ -46,7 +46,13 @@
   <script src=" script.js" type="module">
   </script>
   <footer class="footer">
-    Vremekaz &copy; 2021 &nbsp;&nbsp;
+    Vremekaz &copy;
+    <script type="text/javascript">
+      var dt = new Date();
+      console.log();
+      document.write(dt.getYear() + 1900); 
+    </script>
+    &nbsp;
     <a href="https://github.com/komad1na">Nemanja Komadina</a>&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="https://openweathermap.org/api">OpenWeather API</a>
   </footer>
