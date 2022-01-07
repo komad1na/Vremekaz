@@ -23,6 +23,7 @@ body {
 .kartica hr {
   color: black;
   width: auto;
+
   margin: auto;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -98,8 +99,19 @@ body {
   background-color: var(--pozadina);
   color: var(--tekst);
   flex-shrink: 2;
+  position: static;
 }
-.footer a {
+.ime {
+  text-decoration: none;
+  color: var(--tekst);
+  transition: color 1s;
+}
+.ime:hover {
+  color: coral;
+  overflow: hidden;
+  transition: color 1s;
+}
+.ime:dehov .footer a {
   color: var(--tekst);
 }
 .greske {
